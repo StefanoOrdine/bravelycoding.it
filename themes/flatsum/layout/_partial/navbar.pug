@@ -11,7 +11,7 @@ header#masthead.site-header--fixed.site-header(role='banner')
       nav#navigation.site-navigation.navigation(role='navigation')
         ul#primary.primary-menu
           li.current-menu-item
-            a(href='index.html') Home
+            != link_to(site.root, 'Home')
           li
             != link_to('#', 'Blog')
           li
