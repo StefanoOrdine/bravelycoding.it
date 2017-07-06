@@ -1,0 +1,27 @@
+// BEGIN #main
+section#main.site-content.row(role='main')
+  .blog--section-block.clearfix
+    #blog.blog-content.blog-content--timeline
+      // BEGIN .vertical-timeline
+      ul.vertical-timeline
+        li
+          .post-meta
+            span.date= date(post.date, ('Do MMM YYYY'))
+          .timeline-icon.border-blue
+            i.icon-bubble2
+          .format-image.hentry
+            article
+              h3.blog-title= post.title
+              .entry-content
+                != post.content
+        li
+          #single-nav.single-nav(role='single-nav')
+            nav
+              a(title='Previous Post', href='#')
+                span Previous Post
+                i.icon-prev
+              a(title='Next Post', href='#')
+                i.icon-next
+                span Next Post
+      // END /.vertical-timeline
+// END /#main

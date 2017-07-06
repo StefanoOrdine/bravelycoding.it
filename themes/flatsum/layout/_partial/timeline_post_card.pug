@@ -1,0 +1,14 @@
+li
+  .post-meta
+    span.date= date(post.date, ('Do MMM YYYY'))
+  .timeline-icon.border-blue
+    i.icon-bubble2
+  .format-image.hentry
+    article
+      h3.blog-title
+        != link_to(post.path, post.title)
+      .entry-content
+        p
+          != post.excerpt
+        p
+          != link_to(post.path, 'Read more...')
