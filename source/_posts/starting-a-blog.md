@@ -1,6 +1,7 @@
 ---
 title: Starting a blog
 date: 2017-07-05 15:56:45
+highlight_menu_key: blog
 timeline_icon: icon-bubble2
 ---
 So... I finally decided to bootstrap my personal website, the idea is to build a place to share my experiences and experiments with software and electronics crafting.

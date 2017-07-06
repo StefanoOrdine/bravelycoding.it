@@ -1,6 +1,7 @@
 ---
 title: Does Front Really Matter?
 date: 2017-07-06 14:13:46
+highlight_menu_key: blog
 timeline_icon: icon-bubble2
 ---
 Yeah, it seems like so!

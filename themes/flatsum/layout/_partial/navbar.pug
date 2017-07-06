@@ -10,14 +10,10 @@ header#masthead.site-header--fixed.site-header(role='banner')
     .navbar
       nav#navigation.site-navigation.navigation(role='navigation')
         ul#primary.primary-menu
-          li.current-menu-item
-            != link_to(site.root, 'Home')
-          li
-            != link_to('#', 'Blog')
-          li
-            != link_to('#', 'About Me')
-          li
-            != link_to('#', 'Contact Us')
+          - _.forEach(theme.menu, function(menuEntry, menuKey) {
+            li(class=page.highlight_menu_key === menuKey ? 'current-menu-item' : undefined)
+              != link_to(menuEntry.relativePath, menuEntry.label)
+          - })
         a.nav-toggle.icon-menu(href='#', aria-hidden='false')
     // END .navbar
 // /END header

@@ -1,15 +1,19 @@
+---
+page: 
+  highlight_menu_key: home
+---
 != partial('_partial/homepage_header')
 // BEGIN #main
 section#main.site-content.row(role='main')
   header.page-header.page-header--home
     h2.home-title
-      span My Last Thoughts
+      span I'm Hacking on
 
   .blog--section-block.clearfix
     #blog.blog-content.blog-content--timeline
       // BEGIN .vertical-timeline
       ul.vertical-timeline
-        - site.posts.each(function (post) {
+        - site.posts.sort('date', -1).limit(5).each(function (post) {
           != partial('_partial/timeline_post_card', { post: post })
         - })
       // END /.vertical-timeline

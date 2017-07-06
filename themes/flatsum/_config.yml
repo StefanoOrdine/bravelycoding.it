@@ -1,0 +1,16 @@
+menu:
+  home:
+    label: Home
+    relativePath: /
+  blog:
+    label: Blog
+    relativePath: /#
+  projects:
+    label: Projects
+    relativePath: /#
+  talks:
+    label: Talks
+    relativePath: /#
+  about_me:
+    label: About Me
+    relativePath: /about-me/
