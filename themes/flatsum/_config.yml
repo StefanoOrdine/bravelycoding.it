@@ -14,3 +14,9 @@ menu:
   about_me:
     label: About Me
     relativePath: /about-me/
+
+# Sass
+node_sass:
+  includePaths:
+    - 'themes/flatsum/source/vendor/flatsum/assets/css/scss/bower_components/foundation/scss'
+    - 'themes/flatsum/source/vendor/flatsum/assets/css/scss/bower_components/sass-mixins/'
