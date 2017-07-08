@@ -1,0 +1,408 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+ /*
+*	IE8 Stylesheet
+--------------------------------------------------------------------------------*/
+/* Zurb Foundation4 Grid ---------------------- */
+/* line 15, ../scss/ie.scss */
+.lt-ie9 .row {
+  width: 1200px;
+  max-width: 100%;
+  min-width: 768px;
+  margin: 0 auto;
+}
+
+/* line 21, ../scss/ie.scss */
+.lt-ie9 .row .row {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 0 -15px;
+}
+
+/* line 27, ../scss/ie.scss */
+.lt-ie9 .row.large-collapse .column,
+.lt-ie9 .row.large-collapse .columns {
+  padding: 0;
+}
+
+/* line 31, ../scss/ie.scss */
+.lt-ie9 .row .row {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 0 -15px;
+}
+
+/* line 37, ../scss/ie.scss */
+.lt-ie9 .row .row.large-collapse {
+  margin: 0;
+}
+
+/* line 41, ../scss/ie.scss */
+.lt-ie9 .column, .lt-ie9 .columns {
+  float: left;
+  min-height: 1px;
+  padding: 0 15px;
+  position: relative;
+}
+
+/* line 47, ../scss/ie.scss */
+.lt-ie9 .column.large-centered, .columns.large-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 52, ../scss/ie.scss */
+.lt-ie9 [class*="column"] + [class*="column"]:last-child {
+  float: right;
+}
+
+/* line 55, ../scss/ie.scss */
+.lt-ie9 [class*="column"] + [class*="column"].end {
+  float: left;
+}
+
+/* line 59, ../scss/ie.scss */
+.lt-ie9 .pull-2 {
+  right: 16.66667%;
+}
+
+/* line 60, ../scss/ie.scss */
+.lt-ie9 .pull-3 {
+  right: 25%;
+}
+
+/* line 61, ../scss/ie.scss */
+.lt-ie9 .pull-4 {
+  right: 33.33333%;
+}
+
+/* line 62, ../scss/ie.scss */
+.lt-ie9 .pull-5 {
+  right: 41.66667%;
+}
+
+/* line 63, ../scss/ie.scss */
+.lt-ie9 .pull-6 {
+  right: 50%;
+}
+
+/* line 64, ../scss/ie.scss */
+.lt-ie9 .pull-7 {
+  right: 58.33333%;
+}
+
+/* line 65, ../scss/ie.scss */
+.lt-ie9 .pull-8 {
+  right: 66.66667%;
+}
+
+/* line 66, ../scss/ie.scss */
+.lt-ie9 .pull-9 {
+  right: 75%;
+}
+
+/* line 67, ../scss/ie.scss */
+.lt-ie9 .pull-10 {
+  right: 83.33333%;
+}
+
+/* line 69, ../scss/ie.scss */
+.lt-ie9 .push-2 {
+  left: 16.66667%;
+}
+
+/* line 70, ../scss/ie.scss */
+.lt-ie9 .push-3 {
+  left: 25%;
+}
+
+/* line 71, ../scss/ie.scss */
+.lt-ie9 .push-4 {
+  left: 33.33333%;
+}
+
+/* line 72, ../scss/ie.scss */
+.lt-ie9 .push-5 {
+  left: 41.66667%;
+}
+
+/* line 73, ../scss/ie.scss */
+.lt-ie9 .push-6 {
+  left: 50%;
+}
+
+/* line 74, ../scss/ie.scss */
+.lt-ie9 .push-7 {
+  left: 58.33333%;
+}
+
+/* line 75, ../scss/ie.scss */
+.lt-ie9 .push-8 {
+  left: 66.66667%;
+}
+
+/* line 76, ../scss/ie.scss */
+.lt-ie9 .push-9 {
+  left: 75%;
+}
+
+/* line 77, ../scss/ie.scss */
+.lt-ie9 .push-10 {
+  left: 83.33333%;
+}
+
+/* line 79, ../scss/ie.scss */
+.lt-ie9 .large-1,
+.lt-ie9 .row .large-1 {
+  width: 8.33333%;
+}
+
+/* line 82, ../scss/ie.scss */
+.lt-ie9 .large-2,
+.lt-ie9 .row .large-2 {
+  width: 16.66667%;
+}
+
+/* line 85, ../scss/ie.scss */
+.lt-ie9 .large-3,
+.lt-ie9 .row .large-3 {
+  width: 25%;
+}
+
+/* line 88, ../scss/ie.scss */
+.lt-ie9 .large-4,
+.lt-ie9 .row .large-4 {
+  width: 33.33333%;
+}
+
+/* line 91, ../scss/ie.scss */
+.lt-ie9 .large-5,
+.lt-ie9 .row .large-5 {
+  width: 41.66667%;
+}
+
+/* line 94, ../scss/ie.scss */
+.lt-ie9 .large-6,
+.lt-ie9 .row .large-6 {
+  width: 50%;
+}
+
+/* line 97, ../scss/ie.scss */
+.lt-ie9 .large-7,
+.lt-ie9 .row .large-7 {
+  width: 58.33333%;
+}
+
+/* line 100, ../scss/ie.scss */
+.lt-ie9 .large-8,
+.lt-ie9 .row .large-8 {
+  width: 66.66667%;
+}
+
+/* line 103, ../scss/ie.scss */
+.lt-ie9 .large-9,
+.lt-ie9 .row .large-9 {
+  width: 75%;
+}
+
+/* line 106, ../scss/ie.scss */
+.lt-ie9 .large-10,
+.lt-ie9 .row .large-10 {
+  width: 83.33333%;
+}
+
+/* line 109, ../scss/ie.scss */
+.lt-ie9 .large-11,
+.lt-ie9 .row .large-11 {
+  width: 91.66667%;
+}
+
+/* line 112, ../scss/ie.scss */
+.lt-ie9 .large-12,
+.lt-ie9 .row .large-12 {
+  width: 100%;
+}
+
+/* line 115, ../scss/ie.scss */
+.lt-ie9 .row .large-offset-1 {
+  margin-left: 8.33333%;
+}
+
+/* line 116, ../scss/ie.scss */
+.lt-ie9 .row .large-offset-2 {
+  margin-left: 16.66667%;
+}
+
+/* line 117, ../scss/ie.scss */
+.lt-ie9 .row .large-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 118, ../scss/ie.scss */
+.lt-ie9 .row .large-offset-4 {
+  margin-left: 33.33333%;
+}
+
+/* line 119, ../scss/ie.scss */
+.lt-ie9 .row .large-offset-5 {
+  margin-left: 41.66667%;
+}
+
+/* line 120, ../scss/ie.scss */
+.lt-ie9 .row .large-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 121, ../scss/ie.scss */
+.lt-ie9 .row .large-offset-7 {
+  margin-left: 58.33333%;
+}
+
+/* line 122, ../scss/ie.scss */
+.lt-ie9 .row .large-offset-8 {
+  margin-left: 66.66667%;
+}
+
+/* line 123, ../scss/ie.scss */
+.lt-ie9 .row .large-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 124, ../scss/ie.scss */
+.lt-ie9 .row .large-offset-10 {
+  margin-left: 83.33333%;
+}
+
+/* Nicolas Gallagher's micro clearfix */
+/* line 128, ../scss/ie.scss */
+.lt-ie9 .row {
+  *zoom: 1;
+}
+
+/* line 131, ../scss/ie.scss */
+.lt-ie9 .row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 135, ../scss/ie.scss */
+.lt-ie9 .row:after {
+  clear: both;
+}
+
+/*
+*	IE8 Custom Styles
+-----------------------------------------------------------------------*/
+/* line 144, ../scss/ie.scss */
+.lt-ie9 #main {
+  margin-top: -140px;
+}
+
+/* line 147, ../scss/ie.scss */
+.lt-ie9 .client-wrapper {
+  padding: 0;
+  margin-bottom: 80px;
+}
+
+/* line 151, ../scss/ie.scss */
+.lt-ie9 #call-to-action {
+  padding: 60px 15px 60px;
+}
+
+/* line 154, ../scss/ie.scss */
+.lt-ie9 .site-header {
+  position: relative;
+  padding-bottom: 30px;
+  overflow: visible;
+  zoom: 1;
+}
+
+/* line 160, ../scss/ie.scss */
+.lt-ie9 .section-block--samplepage header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 164, ../scss/ie.scss */
+.lt-ie9 #pagination-wrap {
+  padding: 45px 0 45px;
+}
+
+/* line 167, ../scss/ie.scss */
+.lt-ie9 .comment-body:before {
+  border-color: transparent;
+  border-right-color: #e3e3e3;
+}
+
+/* line 171, ../scss/ie.scss */
+.lt-ie9 .comment-body:after {
+  border-color: transparent #fff transparent transparent;
+}
+
+/* line 174, ../scss/ie.scss */
+.lt-ie9 .vertical-timeline li > #comments-lists li figure img {
+  background: none;
+}
+
+/* line 177, ../scss/ie.scss */
+.lt-ie9 #load-more-wrapper {
+  padding: 0 0 90px;
+}
+
+/* line 180, ../scss/ie.scss */
+.lt-ie9 .vertical-timeline > li > .post-meta .date {
+  font-size: 24px;
+}
+
+/* line 183, ../scss/ie.scss */
+.lt-ie9 .vertical-timeline li > .post-meta a {
+  margin: 0 0;
+}
+
+/**
+* Ie Button Styles
+-------------------------------------------------------------------------------*/
+/* line 190, ../scss/ie.scss */
+.lt-ie9 #scroll-top:hover {
+  color: #16a085;
+}
+
+/* line 193, ../scss/ie.scss */
+.lt-ie9 .contact-inner button[type='submit']:hover,
+.lt-ie9 .contact-inner button[type='submit']:hover .icon-envelop,
+.lt-ie9 .btn:hover {
+  background: #16a085;
+}
+
+/* line 198, ../scss/ie.scss */
+.lt-ie9 #latest-tweet .follow-btn:hover {
+  background: #31c2ff;
+}
+
+/**
+* Portfolio Hover Effects
+-------------------------------------------------------------------------------*/
+/* line 205, ../scss/ie.scss */
+.lt-ie9 .portfolio-4-columns .overlay,
+.lt-ie9 .portfolio-2-columns .overlay,
+.lt-ie9 .portfolio-3-columns .overlay {
+  display: none !important;
+  zoom: 1 !important;
+  /*this triggers haslayout in IE7+6 to fix the extra padding-top problem*/
+  -ms-zoom: 1 !important;
+  /*this triggers haslayout in IE8 to fix the hover bug*/
+}
+
+/* line 212, ../scss/ie.scss */
+.lt-ie9 .portfolio-4-columns a:hover .overlay,
+.lt-ie9 .portfolio-2-columns a:hover .overlay,
+.lt-ie9 .portfolio-3-columns a:hover .overlay,
+.portfolio-3-columns a:focus .overlay {
+  display: block !important;
+  visibility: visible !important;
+}

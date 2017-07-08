@@ -9,6 +9,6 @@
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 @import url('assets/fonts/fonts.css');
-@import url('assets/css/scss/css/app.css');
-@import url('assets/css/scss/css/screen.css');
-@import url('assets/css/scss/css/ie.css');
+@import url('assets/css/app.css');
+@import url('assets/css/screen.css');
+@import url('assets/css/ie.css');
