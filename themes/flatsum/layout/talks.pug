@@ -1,0 +1,16 @@
+// BEGIN #main
+section#main.site-content.row(role='main')
+  header.page-header.page-header--home
+    h2.home-title
+      span Sharing the Knowledge
+  // BEGIN .portfolio-items
+  .grid.portfolio-items.clearfix.section-block
+    - site.pages.filter(function (page) { return page.source.match(/^talks\/((?!(index\.md)).)+$/) }).each(function (talk) {
+      article.grid-6
+        figure
+          a(href=config.root + talk.path)
+            h4= talk.title
+            img(src=talk.image_path, alt=talk.title, data-at2x=talk.image_path_at2x)
+    - })
+  // END /.portfolio-items
+// END /#main

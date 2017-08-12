@@ -4,13 +4,17 @@ menu:
     relativePath: /
   blog:
     label: Blog
-    relativePath: /#
+    relativePath: /blog/
   projects:
     label: Projects
-    relativePath: /#
+    relativePath: /projects/
   talks:
     label: Talks
-    relativePath: /#
+    relativePath: /talks/
   about_me:
     label: About Me
     relativePath: /about-me/
+
+social:
+  github:
+    url: https://github.com/StefanoOrdine

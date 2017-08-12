@@ -1,0 +1,19 @@
+#navigation {
+  a.nav-toggle.icon-menu {
+    margin-top: 1em;
+  }
+}
+
+.navigation li {
+  a:hover,
+  a:focus {
+    border-top: 8px solid $color-third;
+    color: $color-third;
+  }
+
+  &.current-menu-item a {
+    border-top: 8px solid $color-highlight;
+    color: $color-highlight;
+    opacity: none;
+  }
+}

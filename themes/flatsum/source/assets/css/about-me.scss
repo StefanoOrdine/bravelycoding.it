@@ -1,0 +1,44 @@
+section#testimonials {
+  background-color: $color-third;
+  margin-top: 6em;
+
+  .page-header--home {
+    span {
+      background-color: $color-third;
+    }
+  }
+
+  header {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #about-me {
+    width: 100%;
+
+    figure {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 2em;
+    }
+
+    p {
+      margin-bottom: auto;
+      text-align: justify;
+
+      &:after, &:before {
+        content: none;
+      }
+    }
+  }
+}
+
+.services-outer-wrapper {
+  background-color: $color-second;
+}
+
+// TODO look better at media queries.
+// @media only screen and (min-width: 20em) {
+//   section#testimonials {
+//     margin-top: 2em;
+//   }
+// }

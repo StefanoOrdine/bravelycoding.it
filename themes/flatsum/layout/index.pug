@@ -13,8 +13,11 @@ section#main.site-content.row(role='main')
     #blog.blog-content.blog-content--timeline
       // BEGIN .vertical-timeline
       ul.vertical-timeline
-        - site.posts.sort('date', -1).limit(5).each(function (post) {
+        - site.posts.sort('date', -1).limit(3).each(function (post) {
           != partial('_partial/timeline_post_card', { post: post })
         - })
+        li#go-to-blog
+          .timeline-icon.border-blue
+            != link_to(theme.menu.blog.relativePath, '<i class=\'icon-arrow-right2\'></i>', { title: 'blog' })
       // END /.vertical-timeline
 // END /#main

@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'navbar';
+@import 'homepage';
+@import 'blog';
+@import 'talks';
+@import 'talk';
+@import 'about-me';
+
+body {
+  background-color: $background-color;
+
+  .font-icon.font-icon.font-icon:hover {
+    background: white;
+    color: $color-first;
+    border-color: white;
+  }
+}
+
+.border-blue {
+  border-color: $color-fifth;
+}

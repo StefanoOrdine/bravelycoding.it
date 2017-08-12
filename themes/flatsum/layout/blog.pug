@@ -1,0 +1,15 @@
+// BEGIN #main
+section#main.site-content.row(role='main')
+  header.page-header.page-header--home
+    h2.home-title
+      span the path so far
+
+  .blog--section-block.clearfix
+    #blog.blog-content.blog-content--timeline
+      // BEGIN .vertical-timeline
+      ul.vertical-timeline(data-count='5', data-page='1')
+        - site.posts.sort('date', -1).each(function (post) {
+          != partial('_partial/timeline_post_card', { post: post })
+        - })
+      // END /.vertical-timeline
+// END /#main

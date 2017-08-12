@@ -1,0 +1,38 @@
+// BEGIN #main
+section#main.site-content.row(role='main')
+  // BEGIN .section-block
+  .section-block.portfolio--section-block.clearfix
+    // END /section-block
+    .large-8.columns
+      .entry-title
+        h2= page.title
+      |     
+      .entry-content
+        img(src=page.image_path_at2x, alt=page.title)
+        p!= page.content
+    |   
+    .large-4.columns
+      #project-meta
+        h5 Talk Details
+        ul.project-meta
+          li
+            span Event Organizer: 
+            != link_to(page.organizer_link, page.organizer_name)
+          li
+            span Event Page: 
+            != link_to(page.event_link, page.event_name)
+          li
+            span When: 
+            = date(new Date(page.date), 'DD-MM-YYYY HH:mm')
+          li
+            span Where: 
+            != link_to(page.event_map_link, page.event_place_name, { target: '_blank' })
+        != link_to(page.slides_link, 'View The Slides', { class: "button button-flat button-block", target: '_blank' })
+  // /END .section-block
+  // BEGIN #widgets
+  section#widgets.clearfix.widgets
+    .large-12.columns
+      h3!= link_to(theme.menu.talks.relativePath, 'Back to Talks')
+  // END #widgets
+
+// END /#main

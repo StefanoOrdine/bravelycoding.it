@@ -4,9 +4,9 @@ date: 2017-07-06 14:13:46
 highlight_menu_key: blog
 timeline_icon: icon-bubble2
 ---
-Yeah, it seems like so!
+Let's try to use the Front to customize dynamically the look of the blog post.
 <!-- more -->
-I'm using it for the moment to customize the **icon** that appears both in the timeline of posts and in the post page itself, here is how i did it:
+I'm using it to set the **icon** that appears both in the timeline of posts and in the post page itself, here is how I'm gonna do it:
 
 ```
 ---
@@ -14,7 +14,7 @@ title: Front Really Matter?
 date: 2017-07-06 14:13:46
 timeline_icon: icon-bubble2
 ---
-Yeah, it seems like so!
+Let's try to use the Front to customize dynamically the look of the blog post.
 ...
 ```
 
@@ -30,3 +30,5 @@ li
 Will produce this result:
 
 ![Post Timeline Icon](/assets/images/does-front-really-matter/post-timeline-icon.png "Post Timeline Icon")
+
+Exactly what I want, simple and stright.

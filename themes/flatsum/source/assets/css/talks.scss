@@ -1,0 +1,15 @@
+section#main {
+  .portfolio-items {
+    a:hover, a:focus {
+      color: $color-fifth;
+    }
+
+    img {
+      width: 560px;
+    }
+
+    article {
+      margin-bottom: 2em;
+    }
+  }
+}
