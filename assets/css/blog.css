@@ -1,0 +1,40 @@
+section#main.site-content.row {
+  margin-top: 6em; }
+
+.vertical-timeline:before {
+  margin-left: -5px;
+  margin-bottom: -3em; }
+
+.vertical-timeline li nav a {
+  color: #f7f9f8; }
+  .vertical-timeline li nav a:hover {
+    color: #ff8e25; }
+    .vertical-timeline li nav a:hover i.icon-prev, .vertical-timeline li nav a:hover i.icon-next {
+      color: #ff8e25;
+      border-color: #ff8e25; }
+
+.vertical-timeline > li .format-image .entry-content {
+  padding-top: 0; }
+  .vertical-timeline > li .format-image .entry-content a {
+    color: #f7f9f8;
+    border-bottom: 0;
+    text-decoration: none; }
+    .vertical-timeline > li .format-image .entry-content a:hover {
+      color: #ff8e25;
+      border-bottom: 0; }
+
+.vertical-timeline > li .hentry {
+  background: #2196f3;
+  color: #f7f9f8; }
+  .vertical-timeline > li .hentry:after {
+    border-right-color: #2196f3; }
+  .vertical-timeline > li .hentry a {
+    color: #f7f9f8; }
+    .vertical-timeline > li .hentry a:hover {
+      color: #ff8e25;
+      border-bottom: 0; }
+
+.vertical-timeline #go-to-blog {
+  margin-bottom: 10em; }
+  .vertical-timeline #go-to-blog a {
+    color: #0d1f2d; }

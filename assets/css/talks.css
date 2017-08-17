@@ -1,0 +1,8 @@
+section#main .portfolio-items a:hover, section#main .portfolio-items a:focus {
+  color: #2196f3; }
+
+section#main .portfolio-items img {
+  width: 560px; }
+
+section#main .portfolio-items article {
+  margin-bottom: 2em; }

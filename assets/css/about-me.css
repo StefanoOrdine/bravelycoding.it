@@ -1,0 +1,22 @@
+section#testimonials {
+  background-color: #bcc5c7;
+  margin-top: 6em; }
+  section#testimonials .page-header--home span {
+    background-color: #bcc5c7; }
+  section#testimonials header {
+    margin-top: 0;
+    margin-bottom: 0; }
+  section#testimonials #about-me {
+    width: 100%; }
+    section#testimonials #about-me figure {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 2em; }
+    section#testimonials #about-me p {
+      margin-bottom: auto;
+      text-align: justify; }
+      section#testimonials #about-me p:after, section#testimonials #about-me p:before {
+        content: none; }
+
+.services-outer-wrapper {
+  background-color: #546a7b; }
