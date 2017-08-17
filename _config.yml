@@ -68,4 +68,6 @@ theme: flatsum
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:StefanoOrdine/bravelycoding.it.git
+  branch: master
