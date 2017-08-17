@@ -6,11 +6,9 @@ section#main.site-content.row(role='main')
     .large-8.columns
       .entry-title
         h2= page.title
-      |     
       .entry-content
         img(src=page.image_path_at2x, alt=page.title)
         p!= page.content
-    |   
     .large-4.columns
       #project-meta
         h5 Talk Details
@@ -34,5 +32,4 @@ section#main.site-content.row(role='main')
     .large-12.columns
       h3!= link_to(theme.menu.talks.relativePath, 'Back to Talks')
   // END #widgets
-
 // END /#main

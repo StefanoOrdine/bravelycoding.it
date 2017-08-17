@@ -1,0 +1,32 @@
+// BEGIN #main
+section#main.site-content.row(role='main')
+  // BEGIN .section-block
+  .section-block.portfolio--section-block.clearfix
+    // END /section-block
+    .large-8.columns
+      .entry-title
+        h2= page.title
+      .entry-content
+        img(src=page.image_path_at2x, alt=page.title)
+        p!= page.content
+    .large-4.columns
+      #project-meta
+        h5 Project Details
+        ul.project-meta
+          li
+            != link_to(page.live_link, page.live_name)
+          li
+            != link_to(page.code_link, page.code_name)
+        - if(page.try_the_project_link)
+          != link_to(page.try_the_project_link, page.try_the_project_name, { class: "button button-flat button-block", target: '_blank' })
+        - if(page.teardown_link)
+          br
+          = page.teardown_note
+          != link_to(page.teardown_link, page.teardown_name)
+  // /END .section-block
+  // BEGIN #widgets
+  section#widgets.clearfix.widgets
+    .large-12.columns
+      h3!= link_to(theme.menu.projects.relativePath, 'Back to Projects')
+  // END #widgets
+// END /#main

@@ -1,1 +1,16 @@
-| PROJECTS PAGE
+// BEGIN #main
+section#main.site-content.row(role='main')
+  // BEGIN .portfolio-items
+  .grid.portfolio-items.section-block
+    - site.pages.filter(function (page) { return page.source.match(/^projects\/((?!(index\.md)).)+$/) }).sort('date', -1).each(function (project) {
+      a(href=config.root + project.path)
+        article.grid-4.mix.ui-design
+          figure
+            img(src=project.image_path, alt=project.title, data-at2x=project.image_path_at2x)
+            .project-preview-content
+              h3= project.title
+              // .entry-content
+              //   | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    - })
+  // END /.portfolio-filter
+// /END #main
