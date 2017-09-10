@@ -13,6 +13,9 @@
 
 #custom-header {
   margin-top: 8em; }
+  #custom-header a:hover {
+    color: #bcc5c7;
+    text-decoration: underline; }
 
 section#main.site-content.row {
   margin-top: 6em; }
@@ -90,6 +93,11 @@ section#testimonials {
 
 .services-outer-wrapper {
   background-color: #546a7b; }
+
+.site-footer a:hover {
+  color: #bcc5c7;
+  text-decoration: underline;
+  border: 0; }
 
 body {
   background-color: #0d1f2d; }
