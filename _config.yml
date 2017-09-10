@@ -70,4 +70,4 @@ theme: flatsum
 deploy:
   type: git
   repo: git@github.com:StefanoOrdine/bravelycoding.it.git
-  branch: production
+  branch: master
