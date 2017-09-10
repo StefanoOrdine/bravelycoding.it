@@ -5,8 +5,6 @@ layout: project
 highlight_menu_key: projects
 image_path: /assets/images/projects/rails-invaders-at-rails-rumble/rails-invaders-logo.jpg
 image_path_at2x: /assets/images/projects/rails-invaders-at-rails-rumble/rails-invaders-logo-at2x.jpg
-live_link: https://r15.railsrumble.com/entries/9-railsinvaders
-live_name: Rails Rumble Project Page
 code_link: https://github.com/welaika/rails_invaders
 code_name: View the code on Github
 try_the_project_link: http://railsinvaders.r15.railsrumble.com/

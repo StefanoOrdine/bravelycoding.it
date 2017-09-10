@@ -13,10 +13,12 @@ section#main.site-content.row(role='main')
       #project-meta
         h5 Project Details
         ul.project-meta
-          li
-            != link_to(page.live_link, page.live_name)
-          li
-            != link_to(page.code_link, page.code_name)
+          - if(page.live_link)
+            li
+              != link_to(page.live_link, page.live_name)
+          - if(page.code_link)
+            li
+              != link_to(page.code_link, page.code_name)
         - if(page.try_the_project_link)
           != link_to(page.try_the_project_link, page.try_the_project_name, { class: "button button-flat button-block", target: '_blank' })
         - if(page.teardown_link)
