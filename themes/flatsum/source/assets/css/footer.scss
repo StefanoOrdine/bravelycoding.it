@@ -1,0 +1,9 @@
+@import 'variables';
+
+.site-footer {
+  a:hover {
+    color: $color-third;
+    text-decoration: underline;
+    border: 0;
+  }
+}
