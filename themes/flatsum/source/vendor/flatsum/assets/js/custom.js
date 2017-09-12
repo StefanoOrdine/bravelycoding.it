@@ -758,23 +758,23 @@ var flickrPhotos = {
 /*===============================================================================================
 	Initialise scripts on Screen Width
 =================================================================================================*/
-function customImage( el, opacity){
-
-		var customHeader = $(el),
-			dataImage 	 = customHeader.data('image'),
-			dataOpacity  = customHeader.data('opacity'),
-			dataColor 	 = customHeader.data('color');
-
-			// Path to image banner directory
-			imgBg        = "/vendor/flatsum/assets/images/banner/"+ dataImage;
-			$(el).backstretch(imgBg);
-
-			$(el+' .backstretch').css({
-				'opacity': dataOpacity
-			});
-			$(el).css('background-color', "#"+dataColor);
-
-	}
+// function customImage( el, opacity){
+// 
+// 		var customHeader = $(el),
+// 			dataImage 	 = customHeader.data('image'),
+// 			dataOpacity  = customHeader.data('opacity'),
+// 			dataColor 	 = customHeader.data('color');
+// 
+// 			// Path to image banner directory
+// 			imgBg        = "/vendor/flatsum/assets/images/banner/"+ dataImage;
+// 			$(el).backstretch(imgBg);
+// 
+// 			$(el+' .backstretch').css({
+// 				'opacity': dataOpacity
+// 			});
+// 			$(el).css('background-color', "#"+dataColor);
+// 
+// 	}
 
 
 
