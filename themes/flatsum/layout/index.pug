@@ -8,16 +8,42 @@ section#main.site-content.row(role='main')
   header.page-header.page-header--home
     h2.home-title
       span I'm Hacking on
-
-  .blog--section-block.clearfix
-    #blog.blog-content.blog-content--timeline
-      // BEGIN .vertical-timeline
-      ul.vertical-timeline
-        - site.posts.sort('date', -1).limit(3).each(function (post) {
-          != partial('_partial/timeline_post_card', { post: post })
-        - })
-        li#go-to-blog
-          .timeline-icon.border-blue
-            != link_to(theme.menu.blog.relativePath, '<i class=\'icon-arrow-right2\'></i>', { title: 'blog' })
-      // END /.vertical-timeline
+    .blog--section-block.clearfix
+      #blog.blog-content.blog-content--timeline
+        // BEGIN .vertical-timeline
+        ul.vertical-timeline
+          - site.posts.sort('date', -1).limit(3).each(function (post) {
+            != partial('_partial/timeline_post_card', { post: post })
+          - })
+          li#go-to-blog
+            .timeline-icon.border-blue
+              != link_to(theme.menu.blog.relativePath, '<i class=\'icon-arrow-right2\'></i>', { title: 'blog' })
+        // END /.vertical-timeline
+    h2.home-title
+      span My last Projects
+    // BEGIN .portfolio-items
+    .grid.portfolio-items.section-block
+      - site.pages.filter(function (page) { return page.source.match(/^projects\/((?!(index\.md)).)+$/) }).sort('date', -1).limit(3).each(function (project) {
+        a(href=config.root + project.path)
+          article.grid-4.mix.ui-design
+            figure
+              img(src=project.image_path, alt=project.title, data-at2x=project.image_path_at2x)
+              .project-preview-content
+                h3= project.title
+                // .entry-content
+                //   | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      - })
+    // END /.portfolio-filter
+    h2.home-title
+      span Talking around
+    // BEGIN .portfolio-items
+    .grid.portfolio-items.clearfix.section-block
+      - site.pages.filter(function (page) { return page.source.match(/^talks\/((?!(index\.md)).)+$/) }).limit(2).each(function (talk) {
+        article.grid-6
+          figure
+            a(href=config.root + talk.path)
+              h4= talk.title
+              img(src=talk.image_path, alt=talk.title, data-at2x=talk.image_path_at2x)
+      - })
+    // END /.portfolio-items
 // END /#main
